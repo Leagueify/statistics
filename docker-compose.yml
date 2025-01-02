@@ -1,0 +1,12 @@
+services:
+  leagueify-statistics:
+    image: leagueify-statistics-dev
+    build:
+      context: .
+      target: dev
+    command: air
+    ports:
+      - 6505:6505
+    volumes:
+      - ./:/app
+    restart: always
