@@ -16,7 +16,11 @@ info:
 
 servers:
   - url: http://localhost:6505/statistics
-    description: Local Docker Development
+    description: DIRECT -- Local Docker Development
+  - url: http://localhost/statistics
+    description: PROXY -- Local Docker Development
+  - url: http://localhost/api/statistics
+    description: PREFIX PROXY -- Local Docker Development
 
 paths:
   /healthz:
